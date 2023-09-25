@@ -3,7 +3,7 @@ body {
     position: relative; /* By making the parent tag have a relative position it makes it easier to overlay and position items on the page, */
 }
 
-.sun {
+.sun { /* This creates a circle, used as the sun  */
     position: absolute;
     top: 40px;
     right: 50px;
@@ -60,7 +60,7 @@ body {
     z-index: 0; /* The use of the z-index is to help overlay, so that the eye is ON kirby's body rather under it. */
 }
 
-.pupilLeft { /* This creates the white pupil in the eye  */
+.pupilLeft { /* This creates an oval, used for the white pupil in the eye  */
   position: relative;
   top: 15px;
   height: 35px;
@@ -93,7 +93,7 @@ body {
     z-index: 3;
   }
 
-.kirbyMouth { /* This creates an upside down mouth shape  */
+.kirbyMouth { /* This creates an upside down triangle for the mouth shape  */
     padding: 2px; /* By applying padding I was able to make the mouth slighly larger without changing the shape I created. */
     position: relative;
     top: 10px;
@@ -107,7 +107,7 @@ body {
 }
 
 
-.kirbyBlushleft { /* This code creates the left sideway oval on kirby's cheeks */
+.kirbyBlushleft { /* This code creates the left sideway oval on kirby's cheeks, used as blush */
     position: relative;
     right: 336px;
     height: 50px;
@@ -118,7 +118,7 @@ body {
     z-index: 0;
 }
 
-.kirbyBlushright { /* This creates the right sideway oval on kirby's cheek. */
+.kirbyBlushright { /* This creates the right sideway oval on kirby's cheek, which is blush */
     position: relative;
     bottom: 50px;
     right: 100px;
@@ -131,7 +131,7 @@ body {
 }
 
 
-.leftArm { /* The left arm is made here  */
+.leftArm { /* This odd teardrop like shape is used for the left arm   */
     position: absolute;
     height: 146px;
     width: 200px;
@@ -142,7 +142,7 @@ body {
     z-index: 0;
 }
 
-.rightArm { /* This creates the right arm */
+.rightArm { /* This odd teardrop like shape is used for the right arm */
     position: absolute;
     bottom: 266px;
     left: 576px;
@@ -153,7 +153,7 @@ body {
     z-index: 0;
 }
 
-.leftFoot { /* Here is where the left foot is created  */
+.leftFoot { /* Here is where the left foot is created, using a more odd teardrop like shape with two flap sides.  */
     position: absolute;
     top: 660px;
     left: 114px;
@@ -161,11 +161,11 @@ body {
     width: 200px;
     border-radius: 100% 0% 29% 59% ; /* This helps create the odd shape the feet are in  */
     background-color: #d74894;
-    z-index: -1; /* The z index is negative here so that the feet can go behind the body instead of in front */
+    z-index: -1; /* The z index is negative here so that the feet can go behind the body instead of in front. That way the user can't see the flat area of the shape created for this foot */
 }
 
 
-.rightFoot { /* The right foot is created here */
+.rightFoot { /* The right foot is created here, using the same odd shape as the left foot. */
     position: absolute;
     top: 665px;
     right: 588px;
@@ -176,7 +176,7 @@ body {
     z-index: -1;
 }
 
-.dancingCane { /* In this section the dancing cane is created by using the heigh and width of this div. */
+.dancingCane { /* This creates a rectangle used for the dancing cane. This was created by using the height and width of this div. */
     position: relative;
     bottom: 50px;
     left: 672px;
