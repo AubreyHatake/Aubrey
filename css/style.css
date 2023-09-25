@@ -57,7 +57,7 @@ body {
     height: 140px;
     width: 30px;
     background-color: rgb(34, 34, 43);
-    z-index: 0; /* The use of the z-index  is to help overlay. The shape so that the eye is on kirby's body rather under it. */
+    z-index: 0; /* The use of the z-index is to help overlay, so that the eye is ON kirby's body rather under it. */
 }
 
 .pupilLeft { /* This creates the white pupil in the eye  */
@@ -94,7 +94,7 @@ body {
   }
 
 .kirbyMouth { /* This creates an upside down mouth shape  */
-    padding: 2px;
+    padding: 2px; /* By applying padding I was able to make the mouth slighly larger without changing the shape I created. */
     position: relative;
     top: 10px;
     right: 215px;
