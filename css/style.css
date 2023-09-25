@@ -1,9 +1,20 @@
 body {
     background-color: #eef9e4 ;
-     position: relative;   
+    position: relative; /* By making the parent tag have a relative position it makes it easier to overlay and position items on the page, */
 }
 
-.hatTop {
+.sun {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #f6f229; /* This is where the sun gets it's color */
+    border-radius: 50%; /* Here I am able to create a circle with the radius of the border */
+}
+
+
+.hatTop { /* This code below creates a square, which is used for the top portion of the hat */
     position: relative;
     top: 50px;
     right: 224px;
@@ -13,7 +24,7 @@ body {
   z-index: 1;
 }
 
-.hatBottom {
+.hatBottom { /* This code creates a rectangle, used for the bottom portion of the hat  */
     position: relative;
     top: 49px;
     right: 227px;
@@ -23,12 +34,12 @@ body {
   z-index: 1;
 }
 
-.kirby {
-    position: absolute;
+.kirby { /* This creates a large circle, which is used for kirby's body */
+    position: absolute; 
     border-style: solid;
     border-color: #e791bf;
     border-radius: 50%;
-    height: 100%;
+    height: 70%;
     width: 40%;
     top: 150px;
     left: 150px;
@@ -36,9 +47,9 @@ body {
 }
 
 
-.kirbyLefteye {
+.kirbyLefteye { /* An oval is made from this code to create and position the left eye. */
     position: relative;
-    top: 190px;
+    top: 120px;
     right: 300px;
     border-style: solid;
     border-color: black;
@@ -46,10 +57,10 @@ body {
     height: 140px;
     width: 30px;
     background-color: rgb(34, 34, 43);
-    z-index: 2;
+    z-index: 0; /* The use of the z-index  is to help overlay. The shape so that the eye is on kirby's body rather under it. */
 }
 
-.pupilLeft {
+.pupilLeft { /* This creates the white pupil in the eye  */
   position: relative;
   top: 15px;
   height: 35px;
@@ -59,9 +70,9 @@ body {
   z-index: 3;
 }
 
-.kirbyRighteye {
+.kirbyRighteye { /* This creates the right oval eye  */
     position: relative;
-    top: 40px;
+    bottom: 20px;
     right: 144px;
     border-style: solid;
     border-color: black;
@@ -69,10 +80,10 @@ body {
     height: 140px;
     width: 30px;
     background-color: rgb(34, 34, 43);
-    z-index: 9;
+    z-index: 0;
 }
 
-.pupilRight {
+.pupilRight { /* This is where the white right eye pupil is created using height, width, and border radius */
     position: relative;
     top: 15px;
     height: 35px;
@@ -82,35 +93,34 @@ body {
     z-index: 3;
   }
 
-.kirbyMouth {
+.kirbyMouth { /* This creates an upside down mouth shape  */
     padding: 2px;
     position: relative;
-    top: 100px;
+    top: 10px;
     right: 215px;
     width: 0;
 	height: 0;
-	border-left: 27px solid transparent;
-	border-right: 27px solid transparent; /*  */
+	border-left: 27px solid transparent; /* Line 103, 104, and 105 I am able go create the borders that make a triangle. */
+	border-right: 27px solid transparent; 
 	border-top: 52px solid #f62020;
-    z-index: 9;
+    z-index: 0;
 }
 
 
-.kirbyBlushleft {
+.kirbyBlushleft { /* This code creates the left sideway oval on kirby's cheeks */
     position: relative;
-    top: 76px;
     right: 336px;
     height: 50px;
     width: 100px;
     background-color:#d74894;
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 0.7; /* the opacity here makes the color less solid, making the shape more blush like. */
     z-index: 0;
 }
 
-.kirbyBlushright {
+.kirbyBlushright { /* This creates the right sideway oval on kirby's cheek. */
     position: relative;
-    top: 26px;
+    bottom: 50px;
     right: 100px;
     height: 50px;
     width: 100px;
@@ -118,4 +128,60 @@ body {
     border-radius: 50%;
     opacity: 0.7;
     z-index: 0;
+}
+
+
+.leftArm { /* The left arm is made here  */
+    position: absolute;
+    height: 146px;
+    width: 200px;
+    bottom: 316px;
+    right: 1050px;
+    border-radius: 21% 79% 16% 84% ;
+    background-color: #e791bf;
+    z-index: 0;
+}
+
+.rightArm { /* This creates the right arm */
+    position: absolute;
+    bottom: 266px;
+    left: 576px;
+    height: 146px;
+    width: 200px;
+    border-radius: 26% 74% 44% 56%;
+    background-color: #e791bf;
+    z-index: 0;
+}
+
+.leftFoot { /* Here is where the left foot is created  */
+    position: absolute;
+    top: 660px;
+    left: 114px;
+    height: 146px;
+    width: 200px;
+    border-radius: 100% 0% 29% 59% ; /* This helps create the odd shape the feet are in  */
+    background-color: #d74894;
+    z-index: -1; /* The z index is negative here so that the feet can go behind the body instead of in front */
+}
+
+
+.rightFoot { /* The right foot is created here */
+    position: absolute;
+    top: 665px;
+    right: 588px;
+    height: 146px;
+    width: 200px;
+    border-radius: 0% 100% 41% 59%  ;
+    background-color: #d74894;
+    z-index: -1;
+}
+
+.dancingCane { /* In this section the dancing cane is created by using the heigh and width of this div. */
+    position: relative;
+    bottom: 50px;
+    left: 672px;
+    height: 280px;
+    width: 50px;
+    background-color: black;
+    z-index: 2;
 }
